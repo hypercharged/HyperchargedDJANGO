@@ -14,6 +14,7 @@ def index(request):
 		descriptions.append(post.post_description)
 	details = zip(usernames, latest_posts, descriptions, images)	
 	return render(request, 'index.html', {'details': details} )
+"""
 def create_post(request):
     if request.method == 'POST':
         form = CreatePost(request.POST)
@@ -22,3 +23,4 @@ def create_post(request):
     else:
         form = CreatePost()
     return render(request, 'create_post.html', {'form': form})
+    """
